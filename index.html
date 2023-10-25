@@ -27,6 +27,17 @@
          div.rules {
             padding-left: 20px;
          }
+         .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex-item {
+            flex: 1;  /* 让每个子项具有相等的宽度 */
+            box-sizing: border-box;
+            padding: 10px;  /* 根据需要添加内边距 */
+        }
+
     </style>
 </head>
 <body>
@@ -45,6 +56,28 @@
     <p class="centered">Here's a sample video：</p>
     <video class="centered" width="780" height="560" controls>
     <source src="pp1视频.mp4" type="video/mp4">
+    <div class="flex-container">
+    <div class="flex-item">
+        <h3>CEO: </h3>
+        <p>Question 1:In the face of global competition, how do you decide on the company's expansion strategy?
+</p>
+        <p>Question 2:When one of the company's products has a severe safety issue that has already harmed consumers, how would you handle it?
+</p>
+        <p>Question 3:When faced with a decision that requires balancing company profits with social responsibility, what is your choice?
+</p>
+        <p>Question 4:A serious ethical violation occurs within the company, and you learn that a senior manager might be involved. How will you handle it?
+</p>
+    </div>
+
+    <div class="flex-item">
+        <p>第二段话内容</p>
+    </div>
+
+    <div class="flex-item">
+        <p>第三段话内容</p>
+    </div>
+</div>
+
 </video>
 </body>
 </html>
